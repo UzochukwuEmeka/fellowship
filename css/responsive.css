@@ -1,0 +1,120 @@
+.mobile-screen {
+  padding-top: 50px;
+}
+
+.bg-img {
+  background-image: url(/image/Frame\ 39730.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  position: relative;
+  z-index: 1;
+  height: 50vh;
+}
+
+.mobile-screen .mobile-home .header-text h1,
+.mobile-screen .mobile-home .body-text p {
+  color: #000000;
+  z-index: 10;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+}
+.mobile-screen .mobile-home .header-text h1 {
+  font-family: "Blacker Display";
+  font-size: 40px;
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .navbar .navbar-brand {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .hero-section .head-text {
+    font-size: 50px;
+  }
+  .right-card {
+    left: 0;
+    bottom: 0;
+  }
+  .cyber-journey {
+    height: auto;
+  }
+
+  .card {
+    width: 100%;
+  }
+  .cyber-journey .container .cyber-text {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 791px) {
+  /* Cyber journey */
+  .cyber-journey {
+    height: auto;
+  }
+  .card {
+    width: 100%;
+  }
+  .cyber-journey .container .cyber-text {
+    margin-top: 20px;
+  }
+
+  /* Accordion */
+  .accordian .accordian-item {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .accordian button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+  }
+  .accordian button .accordian-title {
+    padding: 1em 1.5em 1em 0em;
+  }
+  .accordian button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    color: #7288a2;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+  }
+
+  /* Footer */
+
+  .footer-body .footer-list {
+    justify-content: space-center;
+    text-align: center;
+  }
+  .footer-body .row h5 {
+    font-size: 12px;
+  }
+  .social-box .white-box {
+    height: 30px;
+    border-top: 1px solid #515151;
+    border-bottom: 1px solid #515151;
+    display: flex;
+    justify-content: space-around;
+  }
+  .social-box .white-box a {
+    text-decoration: none;
+    color: #515151;
+  }
+}

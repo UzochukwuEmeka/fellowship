@@ -1,5 +1,6 @@
 .mobile-screen {
-  padding-top: 50px;
+  padding-top: 80px;
+  background-color: #fafafa;
 }
 
 .bg-img {
@@ -10,7 +11,7 @@
   height: auto;
   position: relative;
   z-index: 1;
-  height: 50vh;
+  height: 60vh;
 }
 
 .mobile-screen .mobile-home .header-text h1,
@@ -26,6 +27,45 @@
   font-family: "Blacker Display";
   font-size: 40px;
   font-weight: 700;
+}
+
+/* tablet */
+
+@media (max-width: 1336px) {
+  .carousel-indicators [data-bs-target] {
+    margin-top: 60px !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .cyber-journey {
+    height: auto;
+  }
+  .card {
+    width: 100%;
+  }
+  .cyber-journey .container .cyber-text {
+    margin-top: 20px;
+  }
+  .hero-section .head-text {
+    font-size: 50px;
+  }
+  .right-card {
+    left: 0;
+    bottom: 0;
+  }
+  .card {
+    width: 100%;
+  }
+  .cyber-journey .container .cyber-text {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1336px) {
+  .carousel-indicators {
+    margin-top: 80px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -73,8 +113,7 @@
   .accordian button .icon {
     display: inline-block;
     position: absolute;
-    top: 0px;
-
+    top: -2px;
     width: 22px;
     height: 22px;
     border: 1px solid;

@@ -36,7 +36,7 @@ html {
 }
 .hero-img img {
   width: 710px;
-  height: 533px;
+  height: 90vh;
   object-fit: contain;
 }
 
@@ -100,13 +100,7 @@ html {
 .cyber-journey {
   background-color: #fafafa;
 }
-.meet-fellows {
-  background-image: url(/image/Ellipse\ 5.png);
-  object-fit: contain;
-  background-position: left;
-  background-repeat: no-repeat;
-  position: relative;
-}
+
 .fellows-image img {
   width: 90px;
   height: 90px;
@@ -153,13 +147,13 @@ html {
   height: 45.8px;
   object-fit: contain;
 }
-.card-body .image2 img {
-  width: 24.06px;
-  height: 21.08px;
+.card-body .image img {
+  width: 50px;
+  height: 50px;
   object-fit: contain;
-  position: absolute;
+  /* position: absolute;
   left: 80px;
-  top: 30px;
+  top: 30px; */
 }
 .left-card {
   margin-top: 20px;
@@ -175,7 +169,15 @@ html {
   height: 60px;
 }
 .card-color-1 {
-  background: #fafafa !important;
+  background: #fffbf2 !important;
+}
+.card-body .card-text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
 }
 
 /* Admission style */

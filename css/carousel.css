@@ -4,15 +4,16 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 90vh;
+  width: 90%;
   position: relative;
   z-index: 1;
 }
 
 .carousel-indicators {
-  top: 470px !important;
-  /* right: 54rem !important; */
+  top: 480px;
   margin-right: 72% !important;
   margin-left: 0 !important;
+  margin-top: 20px;
 }
 .carousel-indicators [data-bs-target] {
   background-color: blue !important;
@@ -20,8 +21,13 @@
   height: 15px !important;
   border-radius: 50%;
 }
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
+  display: none !important;
+}
+.carousel-control-prev,
+.carousel-control-next {
   display: none !important;
 }
 .carousel-item .container {

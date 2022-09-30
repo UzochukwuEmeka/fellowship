@@ -1,7 +1,6 @@
 .form-section {
   background-color: #fafafa;
   height: 100vh;
-  padding-top: 80px;
 }
 .inner-container {
   height: 600px;
@@ -17,8 +16,8 @@
 }
 
 .form-text .form-header-pic .image img {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   object-fit: cover;
   overflow: hidden;
@@ -50,6 +49,12 @@
 
 .form-step {
   display: none;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 400px;
+}
+.form-step::-webkit-scrollbar {
+  display: none;
 }
 .formstep-active {
   display: block;
@@ -72,6 +77,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+  padding-block: 30px;
   counter-reset: step;
 }
 .progress-bars::before,
@@ -113,14 +119,15 @@
 .form {
   margin: 0 auto;
   border: 1px solid #ccc;
-  width: 80%;
+  width: 95%;
   height: auto;
   left: 487px;
   top: 0px;
-  padding: 20px 15px 20px 15px;
+  padding: 25px 25px 25px 25px;
   background-color: #fff;
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
+  overflow: auto;
 }
 .inner-form {
   position: relative;
@@ -130,23 +137,13 @@
   margin: 1rem 0;
 }
 .btns {
-  padding: 6px;
-  display: block;
-  text-decoration: none;
-  background-color: #ffb700;
-  color: white;
-  text-align: center;
-  border-radius: 0.25rem;
-  cursor: pointer;
-  margin-top: 20px;
+  padding: 12px 30px;
 }
-.btns:hover {
-  color: #fff;
-}
+
 .btn-groups {
-  gap: 1.5rem;
+  gap: 1.6rem;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 /* Form */
@@ -165,15 +162,16 @@
   margin: 0 2px;
   padding: 2px 0px;
 }
-.input-date {
-  width: 87%;
-}
+
 .input:focus {
   padding-left: 24px;
 }
-.fa {
+.fa,
+.bi {
   color: #969697;
   cursor: pointer;
+  margin-left: 50px;
+  font-size: 16px;
 }
 
 .question-text {
@@ -184,4 +182,14 @@
   line-height: 22px;
   margin-bottom: 0;
   color: #000000;
+}
+.bottom-label {
+  margin-top: 8px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 22px;
+
+  color: #828283;
 }

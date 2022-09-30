@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/button.css">
         <link rel="stylesheet" href="css/form.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -15,7 +17,7 @@
         <title>Document</title>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg  py-3 navbar-light  ">
+        <nav class="navbar navbar-expand-lg  py-3 navbar-light fixed-top ">
             <div class="container-fluid ">
                 <a class="navbar-brand navbar-brand-2 break" href="#">
                     <img src="image/logo.png" alt="">
@@ -63,39 +65,37 @@
                 </div>
             </div>
         </nav>
-        <section class="form-section  mt-5">
-            <div class="container">
-                <div class="row justify-content-around  align-items-center">
-                    <div class=" col-6 form-text-column">
+        <section class="form-section">
+            <div class="container-fluid">
+                <div class="row justify-content-center  align-items-center inner-container">
+                    <div class=" col-lg-6 col-10 form-text-column">
                         <div class="form-text">
-                            <div class="form-header-pic d-flex">
+                            <div class="form-header-pic d-lg-flex mb-4  d-none ">
                                 <div class="image">
-                                    <img src="image/woman5.jpg" alt="">
+                                    <img src="image/woman7.jpg" alt="">
                                 </div>
                                 <div class="image">
-                                    <img src="image/woman5.jpg" alt="">
+                                    <img src="image/woman6.jpg" alt="">
                                 </div>
                                 <div class="image">
-                                    <img src="image/woman5.jpg" alt="">
+                                    <img src="image/woman2.jpg" alt="">
                                 </div>
                                 <div class="image">
-                                    <img src="image/woman5.jpg" alt="">
+                                    <img src="image/woman1.jpg" alt="">
                                 </div>
                                 <div class="image">
-                                    <img src="image/woman5.jpg" alt="">
+                                    <img src="image/woman4.jpg" alt="">
                                 </div>
                             </div>
                             <div class="form-body-text">
                                 <h1>
                                     Lets get you
-                                    <br>
+                                    <br class="d-none d-lg-block">
                                     onboarded right
-                                    <br>
+                                    <br class="d-none d-lg-block">
                                     away!
                                 </h1>
-                            </div>
-                            <div class="form-body-content">
-                                <p>
+                                <p class="mt-4 d-none d-lg-block">
                                     All interested applicants are expected to complete an
                                     <br>
                                     online application form. Follow the 3 steps below to
@@ -106,91 +106,125 @@
                             </div>
                         </div>
                     </div>
-                    <div class=" col-6 form-fill">
+                    <div class=" col-lg-6 col-12 form-fill">
                         <div class="form-content">
                             <form action="" class="form">
-                                <div class="progress-bars">
-                                    <div class="progress-line" id="progress-line"></div>
-                                    <div class="progress-step progress-step-active"></div>
-                                    <div class="progress-step"></div>
-                                    <div class="progress-step"></div>
-                                    <div class="progress-step"></div>
-                                </div>
-                                <div class="form-step formstep-active">
-                                    <div class="input-group">
-                                        <label for="username">Username</label>
-                                        <input type="text" name="username" id="username">
+                                <div class="inner-form">
+                                    <div class="progress-bars">
+                                        <div class="progress-line" id="progress-line"></div>
+                                        <div class="progress-step progress-step-active"></div>
+                                        <div class="progress-step"></div>
+                                        <div class="progress-step"></div>
+                                        <div class="progress-step"></div>
                                     </div>
-                                    <div class="input-group">
-                                        <label for="username">Username</label>
-                                        <input type="text" name="username" id="username">
+                                    <div class="form-step formstep-active">
+                                        <div class="field mb-5">
+                                            <input type="text" name="username" id="username" class="input" placeholder="First Name *">
+                                        </div>
+                                        <div class="field mb-5">
+                                            <input type="text" name="username" id="username" class="input" placeholder="Last Name *">
+                                        </div>
+                                        <div class="field mb-5">
+                                            <input type="text" name="username" id="username" class="input" placeholder="Email Address * ">
+                                        </div>
+                                        <div class="field mb-5">
+                                            <input type="text" name="username" id="username" class="input" placeholder="Password *">
+                                            <i class="fa fa-eye lock-icon " aria-hidden="true" id="lock-icon"></i>
+                                        </div>
+                                        <div class="field mb-5">
+                                            <input type="text" name="username" id="username" class="input" placeholder="Confirm Password *">
+                                            <i class="fa fa-eye lock-icon " aria-hidden="true" id="lock-icon"></i>
+                                        </div>
+                                        <div class="">
+                                            <a href="#" class="btns btn-next width-50 ml-auto">Next</a>
+                                        </div>
                                     </div>
-                                    <div class="input-group">
-                                        <label for="username">Username</label>
-                                        <input type="text" name="username" id="username">
+                                    <div class="form-step ">
+                                        <div class="field mb-5">
+                                            <input type="text" name="username" id="username" class="input" placeholder="First Name *">
+                                        </div>
+                                        <div class="field mb-5">
+                                            <input type="text" name="username" id="username" class="input" placeholder="Last Name *">
+                                        </div>
+                                        <div class="field mb-5">
+                                            <input type="text" name="username" id="username" class="input" placeholder="Email Address * ">
+                                        </div>
+                                        <div class="field mb-5">
+                                            <input type="text" name="username" id="username" class="input" placeholder="Password *">
+                                            <i class="fa fa-eye lock-icon " aria-hidden="true" id="lock-icon"></i>
+                                        </div>
+                                        <div class="field mb-5">
+                                            <input type="text" name="username" id="username" class="input" placeholder="Confirm Password *">
+                                            <i class="fa fa-eye lock-icon " aria-hidden="true" id="lock-icon"></i>
+                                        </div>
+                                        <div class="btn-groups ">
+                                            <a href="#" class="btns btn-prev">Previous</a>
+                                            <a href="#" class="btns btn-next">Next</a>
+                                        </div>
                                     </div>
-                                    <div class="input-group">
-                                        <label for="username">Username</label>
-                                        <input type="text" name="username" id="username">
+                                    <div class="form-step ">
+                                        <div class="field mb-5">
+                                            <input type="text" name="username" id="username" class="input" placeholder="First Name *">
+                                        </div>
+                                        <div class="field mb-5">
+                                            <input type="text" name="username" id="username" class="input" placeholder="Last Name *">
+                                        </div>
+                                        <div class="field mb-5">
+                                            <input type="text" name="username" id="username" class="input" placeholder="Other Name (s)* ">
+                                        </div>
+                                        <div class="field mb-5">
+                                            <input type="date" name="username" id="username" class="input input-date" placeholder="Date of Birth*">
+                                        </div>
+                                        <div class="field mb-5">
+                                            <input type="text" name="username" id="username" class="input " placeholder="Nationality *">
+                                        </div>
+                                        <div class="btn-groups ">
+                                            <a href="#" class="btns btn-prev">Previous</a>
+                                            <a href="#" class="btns btn-next">Next</a>
+                                        </div>
                                     </div>
-                                    <div class="input-group">
-                                        <label for="username">Username</label>
-                                        <input type="text" name="username" id="username">
-                                    </div>
-                                    <div class="">
-                                        <a href="#" class="btns btn-next width-50 ml-auto">Next</a>
-                                    </div>
-                                </div>
-                                <div class="form-step ">
-                                    <div class="input-group">
-                                        <label for="username">Username</label>
-                                        <input type="text" name="username" id="username">
-                                    </div>
-                                    <div class="input-group">
-                                        <label for="username">Username</label>
-                                        <input type="text" name="username" id="username">
-                                    </div>
-                                    <div class="input-group">
-                                        <label for="username">Username</label>
-                                        <input type="text" name="username" id="username">
-                                    </div>
-                                    <div class="input-group">
-                                        <label for="username">Username</label>
-                                        <input type="text" name="username" id="username">
-                                    </div>
-                                    <div class="input-group">
-                                        <label for="username">Username</label>
-                                        <input type="text" name="username" id="username">
-                                    </div>
-                                    <div class="btn-group">
-                                        <a href="#" class="btns btn-prev">Previous</a>
-                                        <a href="#" class="btns btn-next">Next</a>
-                                    </div>
-                                </div>
-                                <div class="form-step ">
-                                    <div class="input-group">
-                                        <label for="username">Username</label>
-                                        <input type="text" name="username" id="username">
-                                    </div>
-                                    <div class="input-group">
-                                        <label for="username">Username</label>
-                                        <input type="text" name="username" id="username">
-                                    </div>
-                                    <div class="input-group">
-                                        <label for="username">Username</label>
-                                        <input type="text" name="username" id="username">
-                                    </div>
-                                    <div class="input-group">
-                                        <label for="username">Username</label>
-                                        <input type="text" name="username" id="username">
-                                    </div>
-                                    <div class="input-group">
-                                        <label for="username">Username</label>
-                                        <input type="text" name="username" id="username">
-                                    </div>
-                                    <div class="btn-group">
-                                        <a href="#" class="btns btn-prev">Previous</a>
-                                        <input type="submit" class="submit">
+                                    <div class="form-step  mt-2">
+                                        <span class="question ">
+                                            <p class="question-text mt-3 ">Are a Female aged 18 – 28 years old as of the commencement of the fellowship – 24th March 2023</p>
+                                            <label for="yes">Yes</label>
+                                            <input type="radio" name="female" id="yes" class="me-2">
+                                            <label for="no">No</label>
+                                            <input type="radio" name="female" id="yes">
+                                        </span>
+                                        <span class="question ">
+                                            <p class="question-text mt-3">Are from and resident in an African country?</p>
+                                            <label for="yes">Yes</label>
+                                            <input type="radio" name="female" id="yes" class="me-2">
+                                            <label for="no">No</label>
+                                            <input type="radio" name="female" id="yes">
+                                        </span>
+                                        <span class="question ">
+                                            <p class="question-text mt-3">Are passionate about (starting a career in) cybersecurity?</p>
+                                            <label for="yes">Yes</label>
+                                            <input type="radio" name="female" id="yes" class="me-2">
+                                            <label for="no">No</label>
+                                            <input type="radio" name="female" id="yes">
+                                        </span>
+                                        <span class="question ">
+                                            <p class="question-text mt-3">Have access to the internet and are willing to devote fully to 7 months of intensive training</p>
+                                            <label for="yes">Yes</label>
+                                            <input type="radio" name="female" id="yes" class="me-2">
+                                            <label for="no">No</label>
+                                            <input type="radio" name="female" id="yes">
+                                        </span>
+                                        <span class="question ">
+                                            <p class="question-text mt-3">
+                                                Are proficient in English and have completed High school/Secondary school
+                                            </p>
+                                            <label for="yes">Yes</label>
+                                            <input type="radio" name="female" id="yes" class="me-2">
+                                            <label for="no">No</label>
+                                            <input type="radio" name="female" id="yes">
+                                        </span>
+                                        <div class="btn-groups">
+                                            <a href="#" class="btns btn-prev">Previous</a>
+                                            <input type="submit" class="submit btns btn-next">
+                                        </div>
                                     </div>
                                 </div>
                             </form>
@@ -201,4 +235,5 @@
         </section>
     </body>
     <script src="js/form.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>

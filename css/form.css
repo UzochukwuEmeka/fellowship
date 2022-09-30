@@ -1,9 +1,43 @@
+.form-section {
+  background-color: #fafafa;
+  height: 100vh;
+  padding-top: 80px;
+}
+.inner-container {
+  height: 600px;
+}
+
+.form-text-column {
+  padding-left: 120px !important;
+}
+.form-fill {
+  padding-right: 120px !important;
+  position: relative;
+  z-index: 10;
+}
+
 .form-text .form-header-pic .image img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   object-fit: cover;
   overflow: hidden;
+}
+.form-body-text h1 {
+  font-family: "Blacker Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 54px;
+  color: #000000;
+}
+.form-body-text p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
 }
 
 .width-50 {
@@ -12,7 +46,7 @@
 .ml-auto {
   margin-left: auto;
 }
-/* Form */
+/* Form - Second Column*/
 
 .form-step {
   display: none;
@@ -48,12 +82,12 @@
   height: 2px;
   transform: translateY(-50%);
   top: 50%;
-  background-color: #dcdcdc;
+  background-color: #2e2e30;
   z-index: -1;
 }
 .progress-line {
   width: 0;
-  background-color: blue;
+  background-color: #ffb700;
   transition: 1s;
 }
 .progress-step::before {
@@ -64,42 +98,90 @@
 .progress-step {
   width: 35px;
   height: 35px;
-  background-color: #dcdcdc;
+  background-color: #fff;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid #2e2e30;
 }
 
 .progress-step-active {
-  background-color: blue;
-  color: white;
+  color: #ffb700;
+  border: 1px solid #ffb700;
 }
 .form {
   margin: 0 auto;
   border: 1px solid #ccc;
+  width: 80%;
   height: auto;
-  width: 300px;
   left: 487px;
   top: 0px;
+  padding: 20px 15px 20px 15px;
+  background-color: #fff;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
-  padding: 39px 50px 39px 50px;
+}
+.inner-form {
+  position: relative;
+  z-index: 10;
 }
 .input-group {
   margin: 1rem 0;
 }
 .btns {
-  padding: 0.75rem;
+  padding: 6px;
   display: block;
   text-decoration: none;
-  background-color: blue;
+  background-color: #ffb700;
   color: white;
   text-align: center;
   border-radius: 0.25rem;
   cursor: pointer;
+  margin-top: 20px;
 }
-.btn-group {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+.btns:hover {
+  color: #fff;
+}
+.btn-groups {
   gap: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Form */
+.field {
+  margin-top: 25px;
+  width: 100%;
+  padding: 0px 5px;
+  border-bottom: 1px solid #828283;
+}
+.input {
+  border: 0;
+  width: 80%;
+  background-color: inherit;
+  outline: none;
+  transition: 0.6s;
+  margin: 0 2px;
+  padding: 2px 0px;
+}
+.input-date {
+  width: 87%;
+}
+.input:focus {
+  padding-left: 24px;
+}
+.fa {
+  color: #969697;
+  cursor: pointer;
+}
+
+.question-text {
+  font-family: "DM Serif Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 0;
+  color: #000000;
 }

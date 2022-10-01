@@ -179,6 +179,12 @@
   .inner-container {
     height: 80vh;
   }
+  .fa {
+    margin-left: 0;
+  }
+  .btn-groups {
+    display: block;
+  }
 }
 @media (max-width: 800px) {
   .form-text-column {

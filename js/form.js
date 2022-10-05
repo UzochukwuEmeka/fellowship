@@ -4,9 +4,9 @@ const progress = document.getElementById("progress-line");
 const formStep = document.querySelectorAll(".form-step");
 const pogressSteps = document.querySelectorAll(".progress-step ");
 
-const formElements = document.querySelectorAll('form .inner-form .form-step')
-const prevBtn = document.getElementById('prev-btn')
-const nextBtn = document.getElementById('next-btn')
+const formElements = document.querySelectorAll("form .inner-form .form-step");
+const prevBtn = document.getElementById("prev-btn");
+const nextBtn = document.getElementById("next-btn");
 
 let formStepsNum = 0;
 
@@ -46,29 +46,17 @@ function updateProgessbar() {
       ((progressActive.length - 1) / (pogressSteps.length - 1)) * 100 + "%";
   });
 }
-const acc = document.querySelector(".formstep-active");
-const ick = document.querySelector(".back-btn");
 
-function dd() {
-  if (acc.classList.contains("personal-details")) {
-    ick.classList.add("remove-btn");
-  } else {
-    ick.classList.remove("remove-btn");
-  }
-}
+let firstFormElem = formElements[0].classList.contains("formstep-active");
 
+if (firstFormElem) prevBtn.style.display = "none";
 
+prevBtn.addEventListener("click", () => {
+  firstFormElem = formElements[0].classList.contains("formstep-active");
+  if (firstFormElem) prevBtn.style.display = "none";
+});
 
-let firstFormElem = formElements[0].classList.contains('formstep-active')
-
-if (firstFormElem) prevBtn.style.display = 'none'
-
-prevBtn.addEventListener('click', () => {
-  firstFormElem = formElements[0].classList.contains('formstep-active')
-  if (firstFormElem) prevBtn.style.display = 'none'
-})
-
-nextBtn.addEventListener('click', () => {
-  firstFormElem = formElements[0].classList.contains('formstep-active')
-  if (!firstFormElem) prevBtn.style.display = 'inline-block'
-})
+nextBtn.addEventListener("click", () => {
+  firstFormElem = formElements[0].classList.contains("formstep-active");
+  if (!firstFormElem) prevBtn.style.display = "inline-block";
+});

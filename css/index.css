@@ -1,3 +1,5 @@
+@import url("variables.css");
+
 * {
   padding: 0;
   margin: 0;
@@ -7,26 +9,22 @@ html {
   scroll-behavior: smooth;
   transition: 2s;
 }
-:root {
-  --primary-color: #2354d1;
-  --secondary-color: #fff;
-  --background-color: #fafafa;
-}
+
 /* Hero Section */
 
 .hero-section {
-  background-color: #fafafa;
+  background-color: var(--background-color);
   height: 100vh;
 }
 .hero-section .hero-text,
 .hero-btn {
-  padding-left: 50px;
+  padding-left: 30px;
 }
 .hero-section .hero-text.text-header {
-  font-family: "Blacker Display";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 600;
-  font-size: 58px;
+  font-weight: 700;
+  font-size: 50px;
   line-height: 75px;
   color: #000000;
   margin-top: 70px;
@@ -35,25 +33,25 @@ html {
   padding-left: 90px;
 }
 .hero-img img {
-  width: 710px;
-  height: 90vh;
+  width: 750px;
+  height: 92vh;
   object-fit: contain;
 }
 
 /* About Us Style */
 .about-us {
-  background-color: #fafafa;
+  background-color: var(--background-color);
 }
 .sub-header {
   color: var(--primary-color);
-  font-family: "Open Sans";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
 }
 .header {
-  font-family: "Blacker Display";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -98,7 +96,7 @@ html {
 /* Meet Fellows Style */
 .meet-fellows,
 .cyber-journey {
-  background-color: #fafafa;
+  background-color: var(--background-color);
 }
 
 .fellows-image img {
@@ -110,7 +108,7 @@ html {
 }
 .fellows-image .fellows-name {
   text-decoration: underline;
-  font-family: "Open Sans";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -151,9 +149,6 @@ html {
   width: 50px;
   height: 50px;
   object-fit: contain;
-  /* position: absolute;
-  left: 80px;
-  top: 30px; */
 }
 .left-card {
   margin-top: 20px;
@@ -172,10 +167,10 @@ html {
   background: #fffbf2 !important;
 }
 .card-body .card-text {
-  font-family: "Open Sans";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 19px;
   text-align: center;
 }
@@ -221,29 +216,25 @@ html {
 .footer-body .footer-list {
   justify-content: center;
 }
+
+.footer-body .row ul li a,
+.footer-body .row h5,
+.copy-right {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  color: #515151;
+  line-height: 24px;
+}
 .footer-body .row ul li a {
   text-decoration: none;
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #515151;
 }
 .footer-body .row h5 {
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
   text-transform: uppercase;
-  color: #515151;
 }
 .copy-right {
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 24px;
-  color: #515151;
 }

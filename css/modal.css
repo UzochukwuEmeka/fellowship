@@ -1,0 +1,16 @@
+.modal-link {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: #ffb700;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.modal-link:hover {
+  color: #ffb700;
+}
+
+.modal-top {
+  border-bottom: none !important;
+}

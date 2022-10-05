@@ -1,4 +1,4 @@
-/* Container */
+@import url("variables.css"); /* Container */
 
 .form-section {
   background-color: #fafafa;
@@ -25,7 +25,7 @@
   overflow: hidden;
 }
 .form-body-text h1 {
-  font-family: "Blacker Display";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -75,6 +75,19 @@
   }
 }
 
+.inner-form {
+  position: relative;
+  z-index: 10;
+}
+.content-head {
+  width: 100%;
+  overflow: auto;
+}
+.form-inner-header {
+  width: 100%;
+  overflow: auto;
+}
+
 .progress-bars {
   position: relative;
   display: flex;
@@ -102,7 +115,20 @@
   counter-increment: step;
   content: counter(step);
 }
+.progress-step:last-child::before {
+  content: "";
+  height: 10px;
+  width: 20px;
 
+  border-bottom: 2px solid #2e2e30;
+  border-left: 2px solid #2e2e30;
+  position: absolute;
+  top: 50%;
+  left: 96%;
+
+  transform: translate(-50%, -60%) rotate(-45deg);
+  transform-origin: center center;
+}
 .progress-step {
   width: 35px;
   height: 35px;
@@ -118,6 +144,10 @@
   color: #ffb700;
   border: 1px solid #ffb700;
 }
+.progress-step-active:last-child::before {
+  border-bottom: 2px solid #ffb700;
+  border-left: 2px solid #ffb700;
+}
 .form {
   margin: 0 auto;
   border: 1px solid #ccc;
@@ -131,10 +161,7 @@
   border-radius: 10px;
   overflow: auto;
 }
-.inner-form {
-  position: relative;
-  z-index: 10;
-}
+
 .input-group {
   margin: 1rem 0;
 }
@@ -177,7 +204,7 @@
 }
 
 .question-text {
-  font-family: "DM Serif Text";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -194,4 +221,26 @@
   line-height: 22px;
 
   color: #828283;
+}
+.question .accpect {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+.form-select {
+  border: none !important;
+  outline: none !important;
+}
+
+.form-select:focus,
+.form-select:hover {
+  outline: none !important;
+  border: none !important;
+}
+
+/* Js button removal style */
+.remove-btn {
+  display: none;
+}
+.add-btn {
+  display: block;
 }

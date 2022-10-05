@@ -1,3 +1,5 @@
+@import url("variables.css");
+
 .mobile-screen {
   padding-top: 80px;
   background-color: #fafafa;
@@ -187,16 +189,27 @@
   }
 }
 @media (max-width: 800px) {
+  .color-bar {
+    width: 77%;
+    height: 20px;
+    background: var(--primary-color);
+    position: absolute;
+    top: 4px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
   .form-text-column {
     padding: 2px !important;
   }
   .form-body-text {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 10px;
   }
   .form-body-text h1 {
-    font-size: 23px;
+    font-size: 19px;
+    font-family: "Poppins", sans-serif;
     line-height: normal;
+    color: var(--primary-color);
   }
   .form-fill {
     padding: 2px !important;
@@ -204,5 +217,14 @@
   }
   .form {
     width: 90%;
+    box-shadow: 8px 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  .primary-button,
+  .secondary-button,
+  .tertiary-button {
+    padding: 10px 15px;
+  }
+  .bi-calendar {
+    margin-left: 10px;
   }
 }

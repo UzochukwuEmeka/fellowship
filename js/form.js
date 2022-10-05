@@ -42,3 +42,13 @@ function updateProgessbar() {
       ((progressActive.length - 1) / (pogressSteps.length - 1)) * 100 + "%";
   });
 }
+const acc = document.querySelector(".formstep-active");
+const ick = document.querySelector(".back-btn");
+
+function dd() {
+  if (acc.classList.contains("personal-details")) {
+    ick.classList.add("remove-btn");
+  } else {
+    ick.classList.remove("remove-btn");
+  }
+}

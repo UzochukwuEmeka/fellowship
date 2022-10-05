@@ -4,6 +4,10 @@ const progress = document.getElementById("progress-line");
 const formStep = document.querySelectorAll(".form-step");
 const pogressSteps = document.querySelectorAll(".progress-step ");
 
+const formElements = document.querySelectorAll('form .inner-form .form-step')
+const prevBtn = document.getElementById('prev-btn')
+const nextBtn = document.getElementById('next-btn')
+
 let formStepsNum = 0;
 
 nextBtns.forEach((btn) => {
@@ -26,7 +30,7 @@ function updateFormSteps() {
     formstep.classList.contains("formstep-active") &&
       formstep.classList.remove("formstep-active");
   });
-  formStep[formStepsNum].classList.add("formstep-active");
+  formStep[formStepsNum]?.classList.add("formstep-active");
 }
 
 function updateProgessbar() {
@@ -52,3 +56,19 @@ function dd() {
     ick.classList.remove("remove-btn");
   }
 }
+
+
+
+let firstFormElem = formElements[0].classList.contains('formstep-active')
+
+if (firstFormElem) prevBtn.style.display = 'none'
+
+prevBtn.addEventListener('click', () => {
+  firstFormElem = formElements[0].classList.contains('formstep-active')
+  if (firstFormElem) prevBtn.style.display = 'none'
+})
+
+nextBtn.addEventListener('click', () => {
+  firstFormElem = formElements[0].classList.contains('formstep-active')
+  if (!firstFormElem) prevBtn.style.display = 'inline-block'
+})

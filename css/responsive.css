@@ -227,6 +227,9 @@
     margin-top: 15px;
     padding-top: 12px;
   }
+  .form-step::-webkit-scrollbar {
+    display: none;
+  }
   .form {
     width: 90%;
     box-shadow: 8px 15px 30px rgba(0, 0, 0, 0.1);

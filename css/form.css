@@ -34,7 +34,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
-  line-height: 54px;
+  line-height: 60px;
   color: #000000;
 }
 .form-body-text p {
@@ -56,13 +56,27 @@
 
 .form-step {
   display: none;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
   height: 400px;
 }
+
 .form-step::-webkit-scrollbar {
-  display: none;
+  width: 1px;
 }
+
+.form-step::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.form-step::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.form-step::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 .formstep-active {
   display: block;
   transform-origin: top;
@@ -124,13 +138,11 @@
   content: "";
   height: 10px;
   width: 20px;
-
   border-bottom: 2px solid #2e2e30;
   border-left: 2px solid #2e2e30;
   position: absolute;
   top: 50%;
   left: 96%;
-
   transform: translate(-50%, -60%) rotate(-45deg);
   transform-origin: center center;
 }
@@ -234,10 +246,6 @@
   font-family: "Poppins", sans-serif;
   font-size: 16px;
 }
-.form-select {
-  border: none !important;
-  outline: none !important;
-}
 
 .form-select:focus,
 .form-select:hover {
@@ -253,10 +261,14 @@
 .last-step .images {
   margin-top: 50px;
 }
-
-/* form-control */
-.form-control {
+/* Input Default style */
+.default-style {
   border: none !important;
+  outline: none !important;
+}
+
+.academics {
+  padding-left: 0 !important;
 }
 /* Link to sign in form */
 .account-text {

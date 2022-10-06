@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Inter:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,200&display=swap");
+
 .navbar {
-  background-color:  #FAFAFA;
+  background-color: #fafafa;
 }
 .navbar .navbar-brand {
   margin-left: 8rem;
@@ -7,28 +9,24 @@
 }
 .navbar-item .nav-link {
   font-family: "Open Sans", sans-serif;
-  font-size: 18px;
+  font-size: 16px !important;
   font-weight: 400;
   font-style: normal;
-  color: #2e2e30 !important;
+  color: #2e2e30;
 }
 
 .nav-item .nav-link:hover {
   color: #2354d1 !important;
   transition: 1s;
 }
-.nav-item .nav-link.active {
+.nav-item .nav-link.actives {
   color: #2354d1 !important;
 }
 
-.nav-item .nav-link:hover {
-  color: #2354d1 !important;
-  transition: 1s;
-}
-.nav-item .nav-link.active {
-  color: #2354d1 !important;
-}
 .navbar-light .navbar-toggler {
   color: #2354d1 !;
   border-color: #2354d1 !important;
+}
+.forms-nav {
+  color: #ffb700 !important;
 }

@@ -1,0 +1,24 @@
+.signup-text {
+  font-family: "DM Serif Text", serif;
+  font-size: 15px;
+}
+.signup-links {
+  color: #ffb700;
+  text-decoration: none;
+}
+.signup-links:hover {
+  color: #ffb700;
+}
+.fa,
+.bi {
+  color: #969697;
+  cursor: pointer;
+  margin-left: 50px;
+  font-size: 16px;
+}
+
+@media (max-width: 800px) {
+  .bi {
+    margin: 10px;
+  }
+}

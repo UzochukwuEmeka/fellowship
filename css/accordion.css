@@ -37,7 +37,7 @@
 }
 .accordian button .accordian-title {
   padding: 1em 1.5em 1em 5em;
-  font-family: "Open Sans";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -93,11 +93,10 @@
   overflow: hidden;
   transition: opacity 200ms linear, max-height 200ms linear;
   will-change: opacity, max-height;
-text-align: left;
-    padding-left: 50px;
+  text-align: left;
+  padding-left: 50px;
 }
 
-}
 .accordian .accordian-content p {
   font-size: 1rem;
   font-weight: 300;

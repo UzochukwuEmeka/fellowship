@@ -187,7 +187,7 @@
 .field {
   margin-top: 25px;
   width: 100%;
-  padding: 0px 5px;
+  padding: 0;
   border-bottom: 1px solid #828283;
 }
 .input {
@@ -252,6 +252,11 @@
 }
 .last-step .images {
   margin-top: 50px;
+}
+
+/* form-control */
+.form-control {
+  border: none !important;
 }
 /* Link to sign in form */
 .account-text {

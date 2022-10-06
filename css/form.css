@@ -9,12 +9,13 @@
   height: 90vh;
 }
 .inner-container {
-  height: 600px;
+  height: auto;
 }
 
 .form-text-column {
   padding-left: 120px !important;
 }
+
 .form-fill {
   padding-right: 120px !important;
   position: relative;
@@ -37,11 +38,11 @@
   color: #000000;
 }
 .form-body-text p {
-  font-family: "Open Sans";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 24px;
   color: #000000;
 }
 
@@ -159,7 +160,7 @@
   height: auto;
   left: 487px;
   top: 0px;
-  padding: 25px 25px 20px 25px;
+  padding: 5px 25px 0 25px;
   background-color: #fff;
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
@@ -251,4 +252,9 @@
 }
 .last-step .images {
   margin-top: 50px;
+}
+/* Link to sign in form */
+.account-text {
+  margin: 0 auto;
+  text-align: center;
 }

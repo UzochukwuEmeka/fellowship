@@ -48,6 +48,7 @@ function updateProgessbar() {
 }
 
 let firstFormElem = formElements[0].classList.contains("formstep-active");
+let lastFormElem = formElements[formElements.length - 1].classList.contains("formstep-active");
 
 if (firstFormElem) prevBtn.style.display = "none";
 
@@ -58,5 +59,13 @@ prevBtn.addEventListener("click", () => {
 
 nextBtn.addEventListener("click", () => {
   firstFormElem = formElements[0].classList.contains("formstep-active");
+  lastFormElem = formElements[formElements.length - 1].classList.contains("formstep-active")
+
   if (!firstFormElem) prevBtn.style.display = "inline-block";
+  if (lastFormElem) removeBtn()
 });
+
+function removeBtn() {
+  prevBtn.style.display = "none";
+  nextBtn.style.display = "none";
+}

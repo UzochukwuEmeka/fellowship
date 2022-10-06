@@ -46,7 +46,7 @@ function updateProgessbar() {
       ((progressActive.length - 1) / (pogressSteps.length - 1)) * 100 + "%";
   });
 }
-
+// First form button removal
 let firstFormElem = formElements[0].classList.contains("formstep-active");
 
 if (firstFormElem) prevBtn.style.display = "none";

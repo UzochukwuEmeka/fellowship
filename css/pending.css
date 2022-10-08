@@ -1,0 +1,61 @@
+.pending-image {
+  margin-top: 60px;
+}
+.pending-image .hour-glass {
+  -webkit-animation: spin 10s linear infinite;
+  -moz-animation: spin 10s linear infinite;
+  animation: spin 10s linear infinite;
+}
+/* use keyframe */
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.pending-btn {
+  margin-top: 60px;
+}
+.form-text .form-header-pic .image img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.pending-text,
+.mobile-head-text,
+.mobile-body-text {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+
+  color: #ffb700;
+}
+.mobile-head-text,
+.mobile-body-text {
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+}
+.mobile-body-text {
+  font-size: 18px;
+  font-weight: 400;
+}
+@media (max-width: 800px) {
+  .navbar .navbar-brand {
+    margin-left: 0rem !important;
+  }
+}

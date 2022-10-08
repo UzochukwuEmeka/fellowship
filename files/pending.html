@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/form.css">
         <link rel="stylesheet" href="css/responsive.css">
         <link rel="stylesheet" href="css/signup.css">
+        <link rel="stylesheet" href="css/pending.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
@@ -50,41 +51,26 @@
                 </div>
             </div>
         </nav>
-        <section class="form-section">
+        <section class="form-section pt-3">
             <div class="container-fluid ">
                 <div class="row justify-content-center  align-items-center inner-container">
-                    <div class=" col-lg-5 col-10 form-text-column">
+                    <div class=" col-lg-6 col-10 form-text-column">
                         <div class="form-text">
                             <div class="form-header-pic d-lg-flex mb-4  d-none ">
                                 <div class="image">
-                                    <img src="image/woman7.jpg" alt="">
-                                </div>
-                                <div class="image">
-                                    <img src="image/woman6.jpg" alt="">
-                                </div>
-                                <div class="image">
                                     <img src="image/woman2.jpg" alt="">
-                                </div>
-                                <div class="image">
-                                    <img src="image/woman1.jpg" alt="">
-                                </div>
-                                <div class="image">
-                                    <img src="image/woman4.jpg" alt="">
                                 </div>
                             </div>
                             <div class="form-body-text">
                                 <h1 class="d-lg-block d-none">
-                                    Login to
+                                    Welcome
                                     <br class="d-none d-lg-block">
-                                    CyberGirls
+                                    <span class="user-name" id="user-name">
+                                        Jonathan
+                                    </span>
                                 </h1>
                                 <p class="mt-4 d-none d-lg-block left-text">
-                                    All interested applicants are expected to complete an
-                                 
-                                    online application form. Follow the 3 steps below to
-                      
-                                    access 
-                                    and correctly complete the form.
+                                    Your Application is still pending! Give it some time
                                 </p>
                             </div>
                         </div>
@@ -94,49 +80,31 @@
                             <form action="" class="form">
                                 <div class="color-bar"></div>
                                 <div class="inner-form">
-                                    <div class="form-step formstep-active mt-5">
-                                        <h5 class="inner-header">Login</h5>
-                                        <div class="field mb-5">
-                                            <input type="email" name="username" id="email" class="input" placeholder="Email Address *">
+                                    <div class="form-step formstep-active   text-center">
+                                        <div class="complete-text  ">
+                                            <h5 class="inner-header mt-4">Application Status</h5>
+                                            <p class="mobile-head-text d-lg-none d-block">
+                                                Welcome
+                                                <span class="user-name" id="user-name">
+                                                    Jonathan
+                                                </span>
+                                            </p>
+                                            <p class="mobile-body-text d-lg-none d-block">
+                                                Your Application is still pending! Give it some time
+                                            </p>
                                         </div>
-                                        <div class="field mb-5">
-                                            <input type="password" name="password" id="password" class="input" placeholder="Password * ">
-                                            <i class="bi bi-eye lock-icon " aria-hidden="true" id="lock-icon"></i>
+                                        <div class="images pending-image ">
+                                            <img src="image/emojione-v1_hourglass-not-done.png" class="hour-glass" alt="">
                                         </div>
-                                        <div class="forget-password mb-4">
-                                            <a href="change-password.html" class="signup-links">Forget Password ?</a>
-                                        </div>
-                                        <span class=" ">
-                                            <span class=" signup-text">
-                                                Don't have an account?
-                                                <a href="signup.html" class="signup-links">Sign up</a>
-                                            </span>
-                                        </span>
-                                    </div>
-                                    <div class="btn-groups  ">
-                                        <a href="#" class="primary-button   btns" id="next-btn">
-                                            Login
-                                            <i class="fa-solid fa-arrow-right ms-2"></i>
-                                        </a>
+                                        <h5 class="pending-text mt-lg-5 mt-3">Pending</h5>
                                     </div>
                                 </div>
+                                <div class="btn-groups  d-flex align-items-center justify-content-center">
+                                    <a href="index.html" class="primary-button   btns" id="next-btn">
+                                        Go to Home
+                                    </a>
+                                </div>
                             </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="">
-            <!-- Button trigger modal -->
-            <!-- Modal -->
-            <div class="modal fade" id="terms-modal" tabindex="-1" aria-labelledby="terms-modalLabel" aria-hidden="true">
-                <div class="modal-dialog  modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header modal-top">
-                            <h5 class="modal-title" id="exampleModalLabel">Terms and Conditions</h5>
-                        </div>
-                        <div class="modal-body">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nemo quidem earum facere exercitationem omnis quod reiciendis qui? Ratione, nesciunt numquam. Eligendi, beatae laborum magnam quas numquam voluptates, quidem temporibus vero rerum delectus officia error aperiam aut dicta aliquam? Voluptatem ea ut voluptates reprehenderit maiores! Possimus est odit ducimus delectus.
                         </div>
                     </div>
                 </div>

@@ -144,7 +144,7 @@
   top: 50%;
   left: 96%;
   transform: translate(-50%, -60%) rotate(-45deg);
-  transform-origin: center center;
+  transform-origin: cen ter center;
 }
 .progress-step {
   width: 35px;

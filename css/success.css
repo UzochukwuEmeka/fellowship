@@ -1,0 +1,19 @@
+.success-text {
+  color: #477d00;
+}
+.success-image .success-img {
+  animation: bounce 3.5s infinite;
+}
+/* use keyframe */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

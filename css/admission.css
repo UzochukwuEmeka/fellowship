@@ -108,4 +108,7 @@
     height: 120px;
     object-fit: contain;
   }
+  .real-header h4 {
+    font-size: 20px;
+  }
 }

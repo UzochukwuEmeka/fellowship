@@ -30,7 +30,7 @@ body {
   font-size: 49px;
   line-height: 65px;
   color: #000000;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 .hero-section .hero-left-content {
   padding-left: 90px;

@@ -1,4 +1,7 @@
 @import url("variables.css");
+html {
+  font-family: "Poppins", sans-serif !important;
+}
 .primary-button,
 .secondary-button,
 .tertiary-button {

@@ -6,14 +6,14 @@
 }
 
 .bg-img {
-  background-image: url(/image/Frame\ 39730.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)),url(/image/download.jpg);
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
   position: relative;
-  z-index: 1;
-  height: 60vh;
+  color: white;
 }
 
 .mobile-screen .mobile-home .header-text h1,
@@ -24,11 +24,14 @@
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
+  color: white;
+
 }
 .mobile-screen .mobile-home .header-text h1 {
   font-family: "Poppins", sans-serif;
   font-size: 30px;
   font-weight: 700;
+  color: #fafafa;
 }
 
 /* tablet */

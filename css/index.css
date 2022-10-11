@@ -9,6 +9,9 @@ html {
   scroll-behavior: smooth;
   transition: 2s;
 }
+body {
+  font-family: "Poppins", sans-serif !important;
+}
 
 /* Hero Section */
 

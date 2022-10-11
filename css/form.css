@@ -30,7 +30,8 @@
   object-fit: cover;
   overflow: hidden;
 }
-.form-body-text h1 {
+.form-body-text h1,
+.form-body-text p {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -39,12 +40,9 @@
   color: #000000;
 }
 .form-body-text p {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #000000;
 }
 
 .width-50 {
@@ -225,7 +223,7 @@
 }
 
 .question-text {
-  font-family: "DM Serif Text", serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -235,7 +233,7 @@
 }
 .bottom-label {
   margin-top: 8px;
-  font-family: "Open Sans";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 13px;

@@ -1,5 +1,5 @@
 @import url("variables.css");
-html {
+body {
   font-family: "Poppins", sans-serif !important;
 }
 .primary-button,
@@ -11,7 +11,7 @@ html {
   outline: 0;
   color: var(--secondary-color);
   border-radius: 50px;
-  font-family: normal;
+  font-family: "Poppins", sans-serif !important;
   font-weight: 600;
   font-size: 18px;
   text-decoration: none;
